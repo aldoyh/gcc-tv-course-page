@@ -1,4 +1,5 @@
 <html lang="ar" dir="rtl" class="dark"> <!-- الوضع الداكن افتراضياً -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,58 +14,85 @@
         /* تعريف الخط الأساسي للجسم */
         body {
             font-family: 'Tajawal', sans-serif;
-            background-color: #f2f2f2; /* خلفية الوضع الفاتح الافتراضية (أغمق بنسبة 15% من الأبيض النقي) */
+            background-color: #f2f2f2;
+            /* خلفية الوضع الفاتح الافتراضية (أغمق بنسبة 15% من الأبيض النقي) */
         }
+
         /* أنماط الوضع الداكن */
         .dark body {
-            background-color: #1a1a1a; /* خلفية الوضع الداكن */
+            background-color: #1a1a1a;
+            /* خلفية الوضع الداكن */
         }
+
         /* خلفية الحاوية الرئيسية */
         .container-bg {
-            background-color: #ffffff; /* خلفية الحاوية في الوضع الفاتح */
+            background-color: #ffffff;
+            /* خلفية الحاوية في الوضع الفاتح */
         }
+
         .dark .container-bg {
-            background-color: #2d2d2d; /* خلفية الحاوية في الوضع الداكن */
+            background-color: #2d2d2d;
+            /* خلفية الحاوية في الوضع الداكن */
         }
+
         /* خلفية الأقسام الداخلية */
         .section-bg {
-            background-color: #f9fafb; /* خلفية الأقسام في الوضع الفاتح */
+            background-color: #f9fafb;
+            /* خلفية الأقسام في الوضع الفاتح */
         }
+
         .dark .section-bg {
-            background-color: #3a3a3a; /* خلفية الأقسام في الوضع الداكن */
+            background-color: #3a3a3a;
+            /* خلفية الأقسام في الوضع الداكن */
         }
+
         /* لون النص الأساسي */
         .text-color-primary {
-            color: #1f2937; /* لون النص الافتراضي */
+            color: #1f2937;
+            /* لون النص الافتراضي */
         }
+
         .dark .text-color-primary {
-            color: #f9fafb; /* لون النص في الوضع الداكن */
+            color: #f9fafb;
+            /* لون النص في الوضع الداكن */
         }
+
         /* لون النص الثانوي */
         .text-color-secondary {
-            color: #4b5563; /* لون النص الثانوي الافتراضي */
+            color: #4b5563;
+            /* لون النص الثانوي الافتراضي */
         }
+
         .dark .text-color-secondary {
-            color: #d1d5db; /* لون النص الثانوي في الوضع الداكن */
+            color: #d1d5db;
+            /* لون النص الثانوي في الوضع الداكن */
         }
+
         /* لون الحدود */
         .border-color {
-            border-color: #e5e7eb; /* لون الحدود الافتراضي */
+            border-color: #e5e7eb;
+            /* لون الحدود الافتراضي */
         }
+
         .dark .border-color {
-            border-color: #4b5563; /* لون الحدود في الوضع الداكن */
+            border-color: #4b5563;
+            /* لون الحدود في الوضع الداكن */
         }
+
         /* خلفية حقول الإدخال */
         .input-bg {
             background-color: #ffffff;
         }
+
         .dark .input-bg {
             background-color: #4a4a4a;
         }
+
         /* حدود حقول الإدخال */
         .input-border {
             border-color: #d1d5db;
         }
+
         .dark .input-border {
             border-color: #6b7280;
         }
@@ -73,23 +101,29 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #e0e0e0;
             border-radius: 10px;
         }
+
         .dark ::-webkit-scrollbar-track {
             background: #4a4a4a;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #888;
             border-radius: 10px;
         }
+
         .dark ::-webkit-scrollbar-thumb {
             background: #bbb;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
         .dark ::-webkit-scrollbar-thumb:hover {
             background: #ccc;
         }
@@ -98,30 +132,39 @@
         .feedback-form {
             display: none;
         }
+
         /* حاوية رمز QR */
         .qr-code-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #f9fafb; /* لون فاتح لخلفية QR */
+            background-color: #f9fafb;
+            /* لون فاتح لخلفية QR */
             padding: 1.5rem;
-            border-radius: 0.75rem; /* حواف مستديرة */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* ظل خفيف */
+            border-radius: 0.75rem;
+            /* حواف مستديرة */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            /* ظل خفيف */
             text-align: center;
         }
+
         .dark .qr-code-container {
             background-color: #3a3a3a;
         }
+
         .qr-code-image {
             width: 120px;
             height: 120px;
             margin-bottom: 1rem;
-            border-radius: 0.5rem; /* حواف مستديرة */
+            border-radius: 0.5rem;
+            /* حواف مستديرة */
         }
+
         /* أنماط النافذة المنبثقة لـ "اسألني أي شيء" */
         .modal {
-            display: none; /* مخفي افتراضياً */
+            display: none;
+            /* مخفي افتراضياً */
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -129,65 +172,80 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.4); /* أسود مع شفافية */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* أسود مع شفافية */
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .modal-content {
             background-color: #fefefe;
             margin: auto;
             padding: 2rem;
-            border-radius: 0.75rem; /* حواف مستديرة */
+            border-radius: 0.75rem;
+            /* حواف مستديرة */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             width: 90%;
             max-width: 500px;
             position: relative;
         }
+
         .dark .modal-content {
             background-color: #2d2d2d;
             color: #f9fafb;
         }
+
         /* زر إغلاق النافذة المنبثقة */
         .close-button {
             color: #aaa;
             position: absolute;
             top: 1rem;
-            left: 1rem; /* تم تعديله لـ RTL */
+            left: 1rem;
+            /* تم تعديله لـ RTL */
             font-size: 1.5rem;
             font-weight: bold;
             cursor: pointer;
         }
+
         .close-button:hover,
         .close-button:focus {
             color: #000;
             text-decoration: none;
             cursor: pointer;
         }
+
         .dark .close-button {
             color: #d1d5db;
         }
+
         .dark .close-button:hover,
         .dark .close-button:focus {
             color: #f9fafb;
         }
+
         /* الزر العائم "اسألني أي شيء" */
         .floating-button {
             position: fixed;
             bottom: 1.5rem;
-            right: 1.5rem; /* يمكن تعديله إلى left: 1.5rem إذا أردت الزر على اليسار في RTL */
-            background-color: #4f46e5; /* أزرق نيلي 600 */
+            right: 1.5rem;
+            /* يمكن تعديله إلى left: 1.5rem إذا أردت الزر على اليسار في RTL */
+            background-color: #4f46e5;
+            /* أزرق نيلي 600 */
             color: white;
             padding: 1rem 1.5rem;
-            border-radius: 9999px; /* حواف دائرية بالكامل */
+            border-radius: 9999px;
+            /* حواف دائرية بالكامل */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease;
             z-index: 999;
         }
+
         .floating-button:hover {
-            background-color: #4338ca; /* أزرق نيلي 700 */
+            background-color: #4338ca;
+            /* أزرق نيلي 700 */
         }
 
         /* أنماط الإكمال التلقائي */
@@ -196,6 +254,7 @@
             display: inline-block;
             width: 100%;
         }
+
         .autocomplete-items {
             position: absolute;
             border: 1px solid #d4d4d4;
@@ -211,39 +270,48 @@
             border-radius: 0.375rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
+
         .dark .autocomplete-items {
             background-color: #4a4a4a;
             border-color: #6b7280;
         }
+
         .autocomplete-items div {
             padding: 10px;
             cursor: pointer;
             background-color: #fff;
             border-bottom: 1px solid #d4d4d4;
-            text-align: right; /* RTL */
+            text-align: right;
+            /* RTL */
         }
+
         .dark .autocomplete-items div {
             background-color: #4a4a4a;
             border-color: #6b7280;
             color: #f9fafb;
         }
+
         .autocomplete-items div:hover {
             background-color: #e9e9e9;
         }
+
         .dark .autocomplete-items div:hover {
             background-color: #5a5a5a;
         }
+
         .autocomplete-active {
             background-color: #4f46e5 !important;
             color: #ffffff !important;
         }
     </style>
 </head>
+
 <body class="p-4 sm:p-8 text-color-primary">
 
     <div class="max-w-4xl mx-auto container-bg rounded-xl shadow-lg p-6 sm:p-10 my-8">
         <header class="text-center mb-10">
-            <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-color-primary">خطة إعلامية محسّنة لـ <span class="text-indigo-600">[اسم مركزك الإعلامي]</span></h1>
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-color-primary">خطة إعلامية محسّنة لـ <span
+                    class="text-indigo-600">مركز تدريبي إعلامي في مجمع الإعلام</span></h1>
             <p class="text-lg text-color-secondary">استراتيجية ديناميكية للنمو، مدعومة بالملاحظات الفورية.</p>
 
             <!-- مفتاح تبديل الوضع الداكن / الفاتح -->
@@ -251,7 +319,9 @@
                 <span class="text-color-secondary">الوضع الفاتح</span>
                 <label for="darkModeToggle" class="relative inline-flex items-center cursor-pointer">
                     <input type="checkbox" id="darkModeToggle" class="sr-only peer">
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:peer-focus:ring-indigo-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600"></div>
+                    <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:peer-focus:ring-indigo-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600">
+                    </div>
                 </label>
                 <span class="text-color-secondary">الوضع الداكن</span>
             </div>
@@ -261,22 +331,36 @@
         <section id="executive-summary" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">1. ملخص تنفيذي: مركزك الإبداعي في مدينة عيسى</h2>
             <p class="text-color-secondary leading-relaxed mb-4">
-                مرحباً بكم في <strong class="text-indigo-600">[اسم مركزك الإعلامي]</strong>، الذي سيصبح الوجهة الرائدة في مدينة عيسى للابتكار الإعلامي والتعلم والتعاون. تحدد هذه الخطة كيفية بناء مجتمع نابض بالحياة لصناع المحتوى والشركات والجمهور، وكل ذلك مدعوم بالتزامنا بالأدوات مفتوحة المصدر وخبرتك في <strong class="text-purple-700">PHP</strong> و <strong class="text-blue-700">Laravel</strong>.
+                مرحباً بكم في <strong class="text-indigo-600">[اسم مركزك الإعلامي]</strong>، الذي سيصبح الوجهة الرائدة
+                في مدينة عيسى للابتكار الإعلامي والتعلم والتعاون. تحدد هذه الخطة كيفية بناء مجتمع نابض بالحياة لصناع
+                المحتوى والشركات والجمهور، وكل ذلك مدعوم بالتزامنا بالأدوات مفتوحة المصدر وخبرتك في <strong
+                    class="text-purple-700">PHP</strong> و <strong class="text-blue-700">Laravel</strong>.
             </p>
             <p class="text-color-secondary leading-relaxed">
-                هذه ليست مجرد وثيقة ثابتة؛ إنها خطة إعلامية ديناميكية وتفاعلية. سنقدم الاستراتيجية الأساسية كصفحة HTML، معززة بآليات ملاحظات فورية لضمان التحسين المستمر.
+                هذه ليست مجرد وثيقة ثابتة؛ إنها خطة إعلامية ديناميكية وتفاعلية. سنقدم الاستراتيجية الأساسية كصفحة HTML،
+                معززة بآليات ملاحظات فورية لضمان التحسين المستمر.
             </p>
             <!-- ملاحظات حول الملخص التنفيذي -->
             <div class="mt-6 p-4 bg-white dark:bg-gray-700 rounded-md shadow-inner">
                 <p class="text-color-primary font-semibold mb-2">هل يلخص هذا الملخص جوهر رؤيتنا؟</p>
                 <div class="flex items-center space-x-4 flex-row-reverse justify-end">
-                    <button class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="executive-summary" data-response="yes">نعم، تماماً!</button>
-                    <button class="feedback-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="executive-summary" data-response="no">ليس تماماً</button>
-                    <button class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="executive-summary" data-response="suggest">اقتراح تحسين</button>
+                    <button
+                        class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="executive-summary" data-response="yes">نعم، تماماً!</button>
+                    <button
+                        class="feedback-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="executive-summary" data-response="no">ليس تماماً</button>
+                    <button
+                        class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="executive-summary" data-response="suggest">اقتراح تحسين</button>
                 </div>
                 <div id="executive-summary-suggest" class="feedback-form mt-4">
-                    <textarea class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary" rows="3" placeholder="اقتراحك..."></textarea>
-                    <button class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300" data-section="executive-summary">إرسال</button>
+                    <textarea
+                        class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary"
+                        rows="3" placeholder="اقتراحك..."></textarea>
+                    <button
+                        class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300"
+                        data-section="executive-summary">إرسال</button>
                 </div>
                 <p id="executive-summary-thank-you" class="text-green-600 mt-2 hidden">شكراً لملاحظاتك!</p>
             </div>
@@ -288,17 +372,25 @@
             <p class="text-color-secondary leading-relaxed mb-6">فهم جمهورنا أمر أساسي. سنستهدف ثلاث مجموعات رئيسية:</p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-color-primary mb-2">المبدعون الطموحون والطلاب</h3>
-                    <p class="text-color-secondary text-sm">أفراد مهتمون بالتكنولوجيا ومتعطشون لمهارات جديدة في الإعلام الرقمي، الأفلام، التصوير الفوتوغرافي، الصوتيات، البودكاست، والتصميم. يتواجدون على <strong class="text-pink-500">انستغرام، تيك توك، يوتيوب</strong>، والمجتمعات عبر الإنترنت.</p>
+                    <p class="text-color-secondary text-sm">أفراد مهتمون بالتكنولوجيا ومتعطشون لمهارات جديدة في الإعلام
+                        الرقمي، الأفلام، التصوير الفوتوغرافي، الصوتيات، البودكاست، والتصميم. يتواجدون على <strong
+                            class="text-pink-500">انستغرام، تيك توك، يوتيوب</strong>، والمجتمعات عبر الإنترنت.</p>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-color-primary mb-2">الشركات الصغيرة والناشئة</h3>
-                    <p class="text-color-secondary text-sm">أصحاب الأعمال والمسوقون الذين يبحثون عن إنشاء محتوى احترافي بأسعار معقولة (فيديوهات الشركات، صور المنتجات) وتدريب فرقهم. يتواصلون على <strong class="text-blue-600">لينكد إن</strong> وشبكات الأعمال المحلية.</p>
+                    <p class="text-color-secondary text-sm">أصحاب الأعمال والمسوقون الذين يبحثون عن إنشاء محتوى احترافي
+                        بأسعار معقولة (فيديوهات الشركات، صور المنتجات) وتدريب فرقهم. يتواصلون على <strong
+                            class="text-blue-600">لينكد إن</strong> وشبكات الأعمال المحلية.</p>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-color-primary mb-2">المجتمع والجمهور العام</h3>
-                    <p class="text-color-secondary text-sm">أشخاص مهتمون بالفعاليات المحلية، الأنشطة الثقافية، ورش العمل التعليمية، والبرامج المناسبة للعائلات. يتابعون الأخبار المحلية والمجموعات المجتمعية.</p>
+                    <p class="text-color-secondary text-sm">أشخاص مهتمون بالفعاليات المحلية، الأنشطة الثقافية، ورش العمل
+                        التعليمية، والبرامج المناسبة للعائلات. يتابعون الأخبار المحلية والمجموعات المجتمعية.</p>
                 </div>
             </div>
 
@@ -306,13 +398,23 @@
             <div class="mt-6 p-4 bg-white dark:bg-gray-700 rounded-md shadow-inner">
                 <p class="text-color-primary font-semibold mb-2">هل شرائح الجمهور هذه دقيقة وشاملة؟</p>
                 <div class="flex items-center space-x-4 flex-row-reverse justify-end">
-                    <button class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="target-audience" data-response="yes">نعم، تبدو جيدة!</button>
-                    <button class="feedback-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="target-audience" data-response="no">ينقصها شيء</button>
-                    <button class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="target-audience" data-response="suggest">اقتراح شريحة</button>
+                    <button
+                        class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="target-audience" data-response="yes">نعم، تبدو جيدة!</button>
+                    <button
+                        class="feedback-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="target-audience" data-response="no">ينقصها شيء</button>
+                    <button
+                        class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="target-audience" data-response="suggest">اقتراح شريحة</button>
                 </div>
                 <div id="target-audience-suggest" class="feedback-form mt-4">
-                    <textarea class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary" rows="3" placeholder="اقتراحك..."></textarea>
-                    <button class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300" data-section="target-audience">إرسال</button>
+                    <textarea
+                        class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary"
+                        rows="3" placeholder="اقتراحك..."></textarea>
+                    <button
+                        class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300"
+                        data-section="target-audience">إرسال</button>
                 </div>
                 <p id="target-audience-thank-you" class="text-green-600 mt-2 hidden">شكراً لملاحظاتك!</p>
             </div>
@@ -321,26 +423,34 @@
         <!-- الأهداف ومؤشرات الأداء الرئيسية -->
         <section id="goals-kpis" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">3. كيف يبدو النجاح؟ (أهدافنا وكيف نقيسها)</h2>
-            <p class="text-color-secondary leading-relaxed mb-6">استراتيجيتنا مدفوعة بالبيانات. إليك ما نهدف إليه وكيف سنتتبعه:</p>
+            <p class="text-color-secondary leading-relaxed mb-6">استراتيجيتنا مدفوعة بالبيانات. إليك ما نهدف إليه وكيف
+                سنتتبعه:</p>
 
             <div class="space-y-6">
-                <div class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-color-primary mb-2">تعزيز الوعي بالعلامة التجارية</h3>
                     <ul class="list-disc list-inside text-color-secondary space-y-1">
-                        <li><strong>زيارات الموقع:</strong> زيادة 50% في عدد الزوار الفريدين لنطاقك المباشر خلال 6 أشهر.</li>
-                        <li><strong>الوصول الاجتماعي:</strong> زيادة 40% في مرات الظهور عبر جميع المنصات خلال 6 أشهر.</li>
-                        <li><strong>الإشارات الإعلامية:</strong> تأمين أكثر من 5 إشارات إيجابية في وسائل الإعلام البحرينية المحلية كل ربع سنة.</li>
+                        <li><strong>زيارات الموقع:</strong> زيادة 50% في عدد الزوار الفريدين لنطاقك المباشر خلال 6 أشهر.
+                        </li>
+                        <li><strong>الوصول الاجتماعي:</strong> زيادة 40% في مرات الظهور عبر جميع المنصات خلال 6 أشهر.
+                        </li>
+                        <li><strong>الإشارات الإعلامية:</strong> تأمين أكثر من 5 إشارات إيجابية في وسائل الإعلام
+                            البحرينية المحلية كل ربع سنة.</li>
                     </ul>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-color-primary mb-2">زيادة التفاعل والمشاركة</h3>
                     <ul class="list-disc list-inside text-color-secondary space-y-1">
                         <li><strong>التفاعل الاجتماعي:</strong> الحفاظ على معدل تفاعل متوسط 3-5% على المنشورات.</li>
                         <li><strong>حضور الفعاليات:</strong> تحقيق 80% من القدرة الاستيعابية لجميع ورش العمل.</li>
-                        <li><strong>نمو القائمة البريدية:</strong> زيادة 25% في المشتركين الجدد في القائمة البريدية خلال 6 أشهر.</li>
+                        <li><strong>نمو القائمة البريدية:</strong> زيادة 25% في المشتركين الجدد في القائمة البريدية خلال
+                            6 أشهر.</li>
                     </ul>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-5 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-color-primary mb-2">توليد العملاء المحتملين والتحويلات</h3>
                     <ul class="list-disc list-inside text-color-secondary space-y-1">
                         <li><strong>تسجيل العضويات:</strong> زيادة 10% في التسجيلات الجديدة للعضويات كل ربع سنة.</li>
@@ -352,15 +462,26 @@
 
             <!-- ملاحظات حول الأهداف ومؤشرات الأداء الرئيسية -->
             <div class="mt-6 p-4 bg-white dark:bg-gray-700 rounded-md shadow-inner">
-                <p class="text-color-primary font-semibold mb-2">هل هذه الأهداف طموحة بما يكفي، منخفضة جداً، أم مناسبة تماماً؟</p>
+                <p class="text-color-primary font-semibold mb-2">هل هذه الأهداف طموحة بما يكفي، منخفضة جداً، أم مناسبة
+                    تماماً؟</p>
                 <div class="flex items-center space-x-4 flex-row-reverse justify-end">
-                    <button class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="goals-kpis" data-response="just-right">مناسبة تماماً</button>
-                    <button class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="goals-kpis" data-response="too-low">منخفضة جداً</button>
-                    <button class="feedback-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="goals-kpis" data-response="too-high">مرتفعة جداً</button>
+                    <button
+                        class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="goals-kpis" data-response="just-right">مناسبة تماماً</button>
+                    <button
+                        class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="goals-kpis" data-response="too-low">منخفضة جداً</button>
+                    <button
+                        class="feedback-button bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="goals-kpis" data-response="too-high">مرتفعة جداً</button>
                 </div>
                 <div id="goals-kpis-suggest" class="feedback-form mt-4">
-                    <textarea class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary" rows="3" placeholder="اشرح اختيارك أو اقترح مؤشرات أداء رئيسية جديدة..."></textarea>
-                    <button class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300" data-section="goals-kpis">إرسال</button>
+                    <textarea
+                        class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary"
+                        rows="3" placeholder="اشرح اختيارك أو اقترح مؤشرات أداء رئيسية جديدة..."></textarea>
+                    <button
+                        class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300"
+                        data-section="goals-kpis">إرسال</button>
                 </div>
                 <p id="goals-kpis-thank-you" class="text-green-600 mt-2 hidden">شكراً لملاحظاتك!</p>
             </div>
@@ -369,67 +490,97 @@
         <!-- مزيج الإعلام -->
         <section id="media-mix" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">4. كيف سنصل إليهم؟ (مزيجنا الإعلامي)</h2>
-            <p class="text-color-secondary leading-relaxed mb-6">سنستخدم مزيجاً متوازناً، مع إعطاء الأولوية للحلول مفتوحة المصدر والفعالة من حيث التكلفة كلما أمكن ذلك.</p>
+            <p class="text-color-secondary leading-relaxed mb-6">سنستخدم مزيجاً متوازناً، مع إعطاء الأولوية للحلول
+                مفتوحة المصدر والفعالة من حيث التكلفة كلما أمكن ذلك.</p>
 
             <div class="space-y-8">
                 <!-- إعلامنا الخاص -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                <div
+                    class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
                     <h3 class="text-2xl font-semibold text-color-primary mb-3">أ. إعلامنا الخاص (محتوانا ومنصاتنا)</h3>
-                    <p class="text-color-secondary mb-4">موقعك الإلكتروني المبني بـ <strong class="text-blue-700">Laravel</strong> هو منزلنا الرقمي. سنستفيد أيضاً من وسائل التواصل الاجتماعي والبريد الإلكتروني، وكلها تم اختبارها محلياً باستخدام <strong class="text-green-700">Laravel Herd</strong> و <strong class="text-red-700">Mailpit</strong>.</p>
+                    <p class="text-color-secondary mb-4">موقعك الإلكتروني المبني بـ <strong
+                            class="text-blue-700">Laravel</strong> هو منزلنا الرقمي. سنستفيد أيضاً من وسائل التواصل
+                        الاجتماعي والبريد الإلكتروني، وكلها تم اختبارها محلياً باستخدام <strong
+                            class="text-green-700">Laravel Herd</strong> و <strong
+                            class="text-red-700">Mailpit</strong>.</p>
                     <ul class="list-disc list-inside text-color-secondary space-y-2">
-                        <li><strong>الموقع الإلكتروني:</strong> مدونة، تقويم فعاليات، خدمات، معرض أعمال، مصادر تعليمية. مُحسّن لمحركات البحث.</li>
-                        <li><strong>وسائل التواصل الاجتماعي (عضوي):</strong> انستغرام، تيك توك، يوتيوب، فيسبوك، لينكد إن. يتضمن المحتوى لقطات من خلف الكواليس، نصائح، تسليط الضوء على الأعضاء، ترويجات للفعاليات.</li>
-                        <li><strong>التسويق عبر البريد الإلكتروني:</strong> رسائل إخبارية شهرية، عروض حصرية، محتوى تعليمي.</li>
+                        <li><strong>الموقع الإلكتروني:</strong> مدونة، تقويم فعاليات، خدمات، معرض أعمال، مصادر تعليمية.
+                            مُحسّن لمحركات البحث.</li>
+                        <li><strong>وسائل التواصل الاجتماعي (عضوي):</strong> انستغرام، تيك توك، يوتيوب، فيسبوك، لينكد
+                            إن. يتضمن المحتوى لقطات من خلف الكواليس، نصائح، تسليط الضوء على الأعضاء، ترويجات للفعاليات.
+                        </li>
+                        <li><strong>التسويق عبر البريد الإلكتروني:</strong> رسائل إخبارية شهرية، عروض حصرية، محتوى
+                            تعليمي.</li>
                         <li><strong>المساحة الفعلية:</strong> علامات تجارية احترافية، كتيبات.</li>
                     </ul>
                     <!-- رمز QR لملاحظات الإعلام الخاص -->
                     <div class="qr-code-container mt-6" data-section="owned-media">
-                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=QR+Owned" alt="رمز QR لملاحظات الإعلام الخاص" class="qr-code-image">
-                        <p class="text-color-secondary text-sm">امسح رمز QR هذا لتقديم ملاحظات محددة حول استراتيجية <strong>الإعلام الخاص</strong> بنا!</p>
-                        <p class="text-xs text-gray-500 mt-1">(في تطبيق حي، سيرتبط هذا الرمز بنموذج مدعوم بـ Laravel.)</p>
+                        <img src="./assets/images/qr-code.png"
+                            alt="رمز QR لملاحظات الإعلام الخاص" class="qr-code-image">
+                        <p class="text-color-secondary text-sm">امسح رمز QR هذا لتقديم ملاحظات محددة حول استراتيجية
+                            <strong>الإعلام الخاص</strong> بنا!</p>
+                        <p class="text-xs text-gray-500 mt-1">(في تطبيق حي، سيرتبط هذا الرمز بنموذج مدعوم بـ Laravel.)
+                        </p>
                     </div>
                 </div>
 
                 <!-- الإعلام المكتسب -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
-                    <h3 class="text-2xl font-semibold text-color-primary mb-3">ب. الإعلام المكتسب (الدعاية والتفاعل)</h3>
-                    <p class="text-color-secondary mb-4">بناء المصداقية من خلال العلاقات العامة والمؤثرين والشراكات المجتمعية.</p>
+                <div
+                    class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                    <h3 class="text-2xl font-semibold text-color-primary mb-3">ب. الإعلام المكتسب (الدعاية والتفاعل)
+                    </h3>
+                    <p class="text-color-secondary mb-4">بناء المصداقية من خلال العلاقات العامة والمؤثرين والشراكات
+                        المجتمعية.</p>
                     <ul class="list-disc list-inside text-color-secondary space-y-2">
-                        <li><strong>العلاقات العامة:</strong> بيانات صحفية، عروض إعلامية لوسائل الإعلام البحرينية المحلية.</li>
+                        <li><strong>العلاقات العامة:</strong> بيانات صحفية، عروض إعلامية لوسائل الإعلام البحرينية
+                            المحلية.</li>
                         <li><strong>التسويق بالمؤثرين:</strong> الشراكة مع صناع المحتوى المحليين.</li>
                         <li><strong>الشراكات المجتمعية:</strong> التعاون مع المدارس، الشركات، المنظمات الثقافية.</li>
                         <li><strong>المحتوى الذي ينشئه المستخدمون (UGC):</strong> حملات تشجع مشاركة الأعضاء.</li>
                     </ul>
                     <!-- رمز QR لملاحظات الإعلام المكتسب -->
                     <div class="qr-code-container mt-6" data-section="earned-media">
-                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=QR+Earned" alt="رمز QR لملاحظات الإعلام المكتسب" class="qr-code-image">
-                        <p class="text-color-secondary text-sm">امسح رمز QR هذا لتقديم ملاحظات محددة حول استراتيجية <strong>الإعلام المكتسب</strong> لدينا!</p>
-                        <p class="text-xs text-gray-500 mt-1">(في تطبيق حي، سيرتبط هذا الرمز بنموذج مدعوم بـ Laravel.)</p>
+                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=QR+Earned"
+                            alt="رمز QR لملاحظات الإعلام المكتسب" class="qr-code-image">
+                        <p class="text-color-secondary text-sm">امسح رمز QR هذا لتقديم ملاحظات محددة حول استراتيجية
+                            <strong>الإعلام المكتسب</strong> لدينا!</p>
+                        <p class="text-xs text-gray-500 mt-1">(في تطبيق حي، سيرتبط هذا الرمز بنموذج مدعوم بـ Laravel.)
+                        </p>
                     </div>
                 </div>
 
                 <!-- الإعلام المدفوع -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
-                    <h3 class="text-2xl font-semibold text-color-primary mb-3">ج. الإعلام المدفوع (الإعلانات المستهدفة)</h3>
-                    <p class="text-color-secondary mb-4">إعلانات استراتيجية للوصول إلى جماهير محددة، مع صفحات هبوط مُحسّنة بواسطة <strong class="text-blue-700">Laravel</strong>.</p>
+                <div
+                    class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600">
+                    <h3 class="text-2xl font-semibold text-color-primary mb-3">ج. الإعلام المدفوع (الإعلانات المستهدفة)
+                    </h3>
+                    <p class="text-color-secondary mb-4">إعلانات استراتيجية للوصول إلى جماهير محددة، مع صفحات هبوط
+                        مُحسّنة بواسطة <strong class="text-blue-700">Laravel</strong>.</p>
                     <ul class="list-disc list-inside text-color-secondary space-y-2">
-                        <li><strong>إعلانات وسائل التواصل الاجتماعي:</strong> انستغرام، فيسبوك، تيك توك، يوتيوب، لينكد إن. مستهدفة للغاية، مع إعادة استهداف.</li>
-                        <li><strong>التسويق عبر محركات البحث (SEM):</strong> إعلانات جوجل للكلمات المفتاحية ذات الصلة.</li>
+                        <li><strong>إعلانات وسائل التواصل الاجتماعي:</strong> انستغرام، فيسبوك، تيك توك، يوتيوب، لينكد
+                            إن. مستهدفة للغاية، مع إعادة استهداف.</li>
+                        <li><strong>التسويق عبر محركات البحث (SEM):</strong> إعلانات جوجل للكلمات المفتاحية ذات الصلة.
+                        </li>
                         <li><strong>الإعلانات الرقمية المحلية:</strong> إعلانات بانر على مواقع الأخبار البحرينية.</li>
                     </ul>
                     <!-- رمز QR لملاحظات الإعلام المدفوع -->
                     <div class="qr-code-container mt-6" data-section="paid-media">
-                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=QR+Paid" alt="رمز QR لملاحظات الإعلام المدفوع" class="qr-code-image">
-                        <p class="text-color-secondary text-sm">امسح رمز QR هذا لتقديم ملاحظات محددة حول استراتيجية <strong>الإعلام المدفوع</strong> لدينا!</p>
-                        <p class="text-xs text-gray-500 mt-1">(في تطبيق حي، سيرتبط هذا الرمز بنموذج مدعوم بـ Laravel.)</p>
+                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=QR+Paid"
+                            alt="رمز QR لملاحظات الإعلام المدفوع" class="qr-code-image">
+                        <p class="text-color-secondary text-sm">امسح رمز QR هذا لتقديم ملاحظات محددة حول استراتيجية
+                            <strong>الإعلام المدفوع</strong> لدينا!</p>
+                        <p class="text-xs text-gray-500 mt-1">(في تطبيق حي، سيرتبط هذا الرمز بنموذج مدعوم بـ Laravel.)
+                        </p>
                     </div>
                 </div>
             </div>
 
             <!-- ملاحظات عامة حول مزيج الإعلام -->
             <div class="mt-6 p-4 bg-white dark:bg-gray-700 rounded-md shadow-inner">
-                <p class="text-color-primary font-semibold mb-2">ما هي القناة الإعلامية التي تعتقد أنها ستكون الأكثر تأثيراً بالنسبة لنا؟</p>
-                <select id="media-channel-impact" class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary">
+                <p class="text-color-primary font-semibold mb-2">ما هي القناة الإعلامية التي تعتقد أنها ستكون الأكثر
+                    تأثيراً بالنسبة لنا؟</p>
+                <select id="media-channel-impact"
+                    class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary">
                     <option value="">اختر خياراً</option>
                     <option value="website">موقعنا الإلكتروني</option>
                     <option value="instagram">انستغرام</option>
@@ -444,7 +595,9 @@
                     <option value="google-ads">إعلانات جوجل</option>
                     <option value="local-digital">الإعلانات الرقمية المحلية</option>
                 </select>
-                <button class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300" data-section="media-mix-impact">إرسال</button>
+                <button
+                    class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300"
+                    data-section="media-mix-impact">إرسال</button>
                 <p id="media-mix-impact-thank-you" class="text-green-600 mt-2 hidden">شكراً لملاحظاتك!</p>
             </div>
         </section>
@@ -452,22 +605,34 @@
         <!-- استراتيجية المحتوى -->
         <section id="content-strategy" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">5. استراتيجية المحتوى: تمكين الإبداع</h2>
-            <p class="text-color-secondary leading-relaxed mb-4">سيكون محتوانا غنياً بالمعلومات، ملهماً، وعملياً، يعرض قيمة وفرص <strong class="text-indigo-600">[اسم مركزك الإعلامي]</strong>.</p>
+            <p class="text-color-secondary leading-relaxed mb-4">سيكون محتوانا غنياً بالمعلومات، ملهماً، وعملياً، يعرض
+                قيمة وفرص <strong class="text-indigo-600">[اسم مركزك الإعلامي]</strong>.</p>
             <ul class="list-disc list-inside text-color-secondary space-y-2">
-                <li><strong>الرسالة الأساسية:</strong> "<strong class="text-indigo-600">أطلق العنان لقدراتك الإبداعية في [اسم مركزك الإعلامي] – مركزك الرائد للابتكار الإعلامي والتعلم والتعاون في البحرين.</strong>"</li>
+                <li><strong>الرسالة الأساسية:</strong> "<strong class="text-indigo-600">أطلق العنان لقدراتك الإبداعية في
+                        [اسم مركزك الإعلامي] – مركزك الرائد للابتكار الإعلامي والتعلم والتعاون في البحرين.</strong>"
+                </li>
                 <li><strong>النبرة:</strong> حماسية، تمكينية، تعاونية، احترافية، وسهلة الوصول.</li>
-                <li><strong>دعوة للعمل (CTA):</strong> دعوات واضحة ومتسقة للعمل عبر جميع المنصات (مثل: "احجز جولة، "سجل الآن"، "كن عضواً"، "حمل دليلنا").</li>
+                <li><strong>دعوة للعمل (CTA):</strong> دعوات واضحة ومتسقة للعمل عبر جميع المنصات (مثل: "احجز جولة، "سجل
+                    الآن"، "كن عضواً"، "حمل دليلنا").</li>
             </ul>
             <!-- ملاحظات حول استراتيجية المحتوى -->
             <div class="mt-6 p-4 bg-white dark:bg-gray-700 rounded-md shadow-inner">
                 <p class="text-color-primary font-semibold mb-2">ما مدى وضوح وجاذبية رسالتنا الأساسية؟</p>
                 <div class="flex items-center space-x-4 flex-row-reverse justify-end">
-                    <button class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="content-strategy" data-response="very-clear">واضحة جداً</button>
-                    <button class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300" data-section="content-strategy" data-response="needs-work">تحتاج لتحسين</button>
+                    <button
+                        class="feedback-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="content-strategy" data-response="very-clear">واضحة جداً</button>
+                    <button
+                        class="feedback-button bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+                        data-section="content-strategy" data-response="needs-work">تحتاج لتحسين</button>
                 </div>
                 <div id="content-strategy-suggest" class="feedback-form mt-4">
-                    <textarea class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary" rows="3" placeholder="اقتراحك..."></textarea>
-                    <button class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300" data-section="content-strategy">إرسال</button>
+                    <textarea
+                        class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-right input-bg text-color-primary"
+                        rows="3" placeholder="اقتراحك..."></textarea>
+                    <button
+                        class="submit-feedback bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md mt-2 transition duration-300"
+                        data-section="content-strategy">إرسال</button>
                 </div>
                 <p id="content-strategy-thank-you" class="text-green-600 mt-2 hidden">شكراً لملاحظاتك!</p>
             </div>
@@ -476,27 +641,44 @@
         <!-- الأدوات والمكدس التقني -->
         <section id="tools-tech" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">6. الأدوات والمكدس التقني (ترسانتك)</h2>
-            <p class="text-color-secondary leading-relaxed mb-6">كل شيء يتماشى مع إعداداتك الحالية، مع إعطاء الأولوية للحلول مفتوحة المصدر وسير العمل الفعال:</p>
+            <p class="text-color-secondary leading-relaxed mb-6">كل شيء يتماشى مع إعداداتك الحالية، مع إعطاء الأولوية
+                للحلول مفتوحة المصدر وسير العمل الفعال:</p>
             <ul class="list-disc list-inside text-color-secondary space-y-2">
-                <li><strong>التطوير الأساسي:</strong> <strong class="text-purple-700">PHP 8.4</strong> و <strong class="text-blue-700">Laravel</strong> (للموقع الإلكتروني، واجهة برمجة التطبيقات، معالجة الملاحظات).</li>
-                <li><strong>البيئة المحلية:</strong> <strong class="text-green-700">Laravel Herd</strong> (<code class="bg-gray-200 p-1 rounded">http://yourmediacenter.test</code>)، <strong class="text-red-700">Mailpit</strong> لاختبار البريد الإلكتروني، <strong class="text-orange-600">Redis</strong> للتخزين المؤقت، قوائم الانتظار، وبث الأحداث الفورية.</li>
+                <li><strong>التطوير الأساسي:</strong> <strong class="text-purple-700">PHP 8.4</strong> و <strong
+                        class="text-blue-700">Laravel</strong> (للموقع الإلكتروني، واجهة برمجة التطبيقات، معالجة
+                    الملاحظات).</li>
+                <li><strong>البيئة المحلية:</strong> <strong class="text-green-700">Laravel Herd</strong> (<code
+                        class="bg-gray-200 p-1 rounded">http://yourmediacenter.test</code>)، <strong
+                        class="text-red-700">Mailpit</strong> لاختبار البريد الإلكتروني، <strong
+                        class="text-orange-600">Redis</strong> للتخزين المؤقت، قوائم الانتظار، وبث الأحداث الفورية.</li>
                 <li><strong>قاعدة البيانات:</strong> <strong class="text-gray-800">MySQL</strong>.</li>
-                <li><strong>سحر الواجهة الأمامية:</strong> <strong class="text-green-500">Node 23+</strong> لتجميع الأصول (Vite/Mix)، <strong class="text-blue-400">Tailwind CSS</strong> للتصميم، <strong class="text-purple-500">Livewire</strong> أو <strong class="text-pink-500">Inertia.js</strong> لمكونات واجهة المستخدم الديناميكية.</li>
-                <li><strong>التحكم في الإصدارات:</strong> <strong class="text-gray-800">Git</strong> (تفضيل المنصات مفتوحة المصدر مثل GitLab).</li>
-                <li><strong>أدوات التصميم:</strong> <strong class="text-green-600">GIMP, Inkscape</strong> (مفتوحة المصدر)، أو <strong class="text-pink-400">Canva</strong> (الخطة المجانية).</li>
+                <li><strong>سحر الواجهة الأمامية:</strong> <strong class="text-green-500">Node 23+</strong> لتجميع
+                    الأصول (Vite/Mix)، <strong class="text-blue-400">Tailwind CSS</strong> للتصميم، <strong
+                        class="text-purple-500">Livewire</strong> أو <strong class="text-pink-500">Inertia.js</strong>
+                    لمكونات واجهة المستخدم الديناميكية.</li>
+                <li><strong>التحكم في الإصدارات:</strong> <strong class="text-gray-800">Git</strong> (تفضيل المنصات
+                    مفتوحة المصدر مثل GitLab).</li>
+                <li><strong>أدوات التصميم:</strong> <strong class="text-green-600">GIMP, Inkscape</strong> (مفتوحة
+                    المصدر)، أو <strong class="text-pink-400">Canva</strong> (الخطة المجانية).</li>
                 <li><strong>التحليلات:</strong> <strong class="text-orange-500">Google Analytics 4 (GA4)</strong>.</li>
-                <li><strong>التسويق عبر البريد الإلكتروني:</strong> <strong class="text-green-800">Mautic</strong> (مفتوح المصدر) أو تكامل <strong class="text-blue-700">Laravel</strong> مخصص.</li>
-                <li><strong>إدارة المشاريع:</strong> <strong class="text-blue-500">Trello/Asana</strong> (الخطط المجانية).</li>
-                <li><strong>توليد رموز QR:</strong> حزمة <strong class="text-blue-700">Laravel</strong> (مثل <code class="bg-gray-200 p-1 rounded">simplesoftwareio/simple-qrcode</code>) لرموز QR الديناميكية.</li>
+                <li><strong>التسويق عبر البريد الإلكتروني:</strong> <strong class="text-green-800">Mautic</strong>
+                    (مفتوح المصدر) أو تكامل <strong class="text-blue-700">Laravel</strong> مخصص.</li>
+                <li><strong>إدارة المشاريع:</strong> <strong class="text-blue-500">Trello/Asana</strong> (الخطط
+                    المجانية).</li>
+                <li><strong>توليد رموز QR:</strong> حزمة <strong class="text-blue-700">Laravel</strong> (مثل <code
+                        class="bg-gray-200 p-1 rounded">simplesoftwareio/simple-qrcode</code>) لرموز QR الديناميكية.
+                </li>
             </ul>
         </section>
 
         <!-- تخصيص الميزانية -->
         <section id="budget-allocation" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">7. تخصيص الميزانية (مثال، سيتم تحديده لاحقاً)</h2>
-            <p class="text-color-secondary leading-relaxed mb-6">هذا مثال للتخصيص. سيتم تحديد الأرقام المحددة بناءً على التخطيط التفصيلي.</p>
+            <p class="text-color-secondary leading-relaxed mb-6">هذا مثال للتخصيص. سيتم تحديد الأرقام المحددة بناءً على
+                التخطيط التفصيلي.</p>
             <ul class="list-disc list-inside text-color-secondary space-y-2">
-                <li><strong>الإعلام المدفوع: 60%</strong> (إعلانات وسائل التواصل الاجتماعي 30%، إعلانات جوجل 20%، إعلانات رقمية محلية 10%)</li>
+                <li><strong>الإعلام المدفوع: 60%</strong> (إعلانات وسائل التواصل الاجتماعي 30%، إعلانات جوجل 20%،
+                    إعلانات رقمية محلية 10%)</li>
                 <li><strong>إنشاء المحتوى: 20%</strong> (وقتك، أدوات مفتوحة المصدر، حد أدنى من الوسائط الجاهزة)</li>
                 <li><strong>الأدوات والاشتراكات: 10%</strong> (منصة بريد إلكتروني، استضافة، إلخ.)</li>
                 <li><strong>الطوارئ: 10%</strong></li>
@@ -506,13 +688,16 @@
         <!-- قسم مولد المطالبات الجديد -->
         <section id="prompt-generator" class="mb-12 p-6 section-bg rounded-lg shadow-sm text-right">
             <h2 class="text-3xl font-bold text-color-primary mb-4">8. مولد المطالبات: أنشئ محتواك بلمسة</h2>
-            <p class="text-color-secondary leading-relaxed mb-6">استخدم هذا المولد لإنشاء مطالبات جاهزة للاستخدام لحملاتك الإعلامية. اختر الخيارات أو اكتب الكلمات المفتاحية للحصول على اقتراحات.</p>
+            <p class="text-color-secondary leading-relaxed mb-6">استخدم هذا المولد لإنشاء مطالبات جاهزة للاستخدام
+                لحملاتك الإعلامية. اختر الخيارات أو اكتب الكلمات المفتاحية للحصول على اقتراحات.</p>
 
             <div class="space-y-6">
                 <!-- السؤال 1: نوع المحتوى -->
                 <div>
-                    <label for="content-type" class="block text-lg font-semibold text-color-primary mb-2">1. ما نوع المحتوى الذي تريد إنشاءه؟</label>
-                    <select id="content-type" class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right">
+                    <label for="content-type" class="block text-lg font-semibold text-color-primary mb-2">1. ما نوع
+                        المحتوى الذي تريد إنشاءه؟</label>
+                    <select id="content-type"
+                        class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right">
                         <option value="">اختر نوع المحتوى</option>
                         <option value="social-media-post">منشور وسائل التواصل الاجتماعي</option>
                         <option value="blog-post">مقالة مدونة</option>
@@ -523,17 +708,22 @@
 
                 <!-- السؤال 2: الموضوع (مع إكمال تلقائي) -->
                 <div>
-                    <label for="topic-input" class="block text-lg font-semibold text-color-primary mb-2">2. ما هو الموضوع الرئيسي؟</label>
+                    <label for="topic-input" class="block text-lg font-semibold text-color-primary mb-2">2. ما هو
+                        الموضوع الرئيسي؟</label>
                     <div class="autocomplete-container">
-                        <input type="text" id="topic-input" class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right" placeholder="اكتب موضوعاً (مثل: التصوير الفوتوغرافي، تحرير الفيديو، البودكاست)">
+                        <input type="text" id="topic-input"
+                            class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right"
+                            placeholder="اكتب موضوعاً (مثل: التصوير الفوتوغرافي، تحرير الفيديو، البودكاست)">
                         <div id="topic-suggestions" class="autocomplete-items"></div>
                     </div>
                 </div>
 
                 <!-- السؤال 3: الجمهور المستهدف -->
                 <div>
-                    <label for="target-audience-prompt" class="block text-lg font-semibold text-color-primary mb-2">3. من هو الجمهور المستهدف؟</label>
-                    <select id="target-audience-prompt" class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right">
+                    <label for="target-audience-prompt" class="block text-lg font-semibold text-color-primary mb-2">3.
+                        من هو الجمهور المستهدف؟</label>
+                    <select id="target-audience-prompt"
+                        class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right">
                         <option value="">اختر الجمهور المستهدف</option>
                         <option value="aspiring-creators">المبدعون الطموحون</option>
                         <option value="small-businesses">الشركات الصغيرة</option>
@@ -544,20 +734,29 @@
 
                 <!-- السؤال 4: الهدف (مع إكمال تلقائي) -->
                 <div>
-                    <label for="goal-input" class="block text-lg font-semibold text-color-primary mb-2">4. ما هو الهدف من هذا المحتوى؟</label>
+                    <label for="goal-input" class="block text-lg font-semibold text-color-primary mb-2">4. ما هو الهدف
+                        من هذا المحتوى؟</label>
                     <div class="autocomplete-container">
-                        <input type="text" id="goal-input" class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right" placeholder="اكتب هدفاً (مثل: زيادة الوعي، جذب التسجيلات، تعزيز المبيعات)">
+                        <input type="text" id="goal-input"
+                            class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right"
+                            placeholder="اكتب هدفاً (مثل: زيادة الوعي، جذب التسجيلات، تعزيز المبيعات)">
                         <div id="goal-suggestions" class="autocomplete-items"></div>
                     </div>
                 </div>
 
-                <button id="generate-prompt-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 w-full">توليد المطالبة</button>
+                <button id="generate-prompt-btn"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 w-full">توليد
+                    المطالبة</button>
 
                 <!-- منطقة عرض المطالبة -->
-                <div id="generated-prompt-area" class="mt-8 p-6 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 hidden">
+                <div id="generated-prompt-area"
+                    class="mt-8 p-6 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 hidden">
                     <h3 class="text-xl font-semibold text-color-primary mb-3">المطالبة المولّدة:</h3>
-                    <textarea id="generated-prompt-text" class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right" rows="8" readonly></textarea>
-                    <button id="copy-prompt-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md mt-4 transition duration-300 flex items-center justify-center mx-auto">
+                    <textarea id="generated-prompt-text"
+                        class="w-full p-3 border input-border rounded-md input-bg text-color-primary focus:ring-indigo-500 focus:border-indigo-500 text-right"
+                        rows="8" readonly></textarea>
+                    <button id="copy-prompt-btn"
+                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md mt-4 transition duration-300 flex items-center justify-center mx-auto">
                         <i class="fas fa-eye text-lg ml-2"></i> نسخ المطالبة
                     </button>
                     <p id="copy-success-message" class="text-green-600 mt-2 hidden text-center">تم النسخ بنجاح!</p>
@@ -565,9 +764,13 @@
             </div>
         </section>
 
-        <footer class="text-center text-color-secondary text-sm mt-12 pt-8 border-t border-color">
-            <p>&copy; 2025 [اسم مركزك الإعلامي]. جميع الحقوق محفوظة.</p>
-            <p>مصمم بـ <span class="text-red-500">&hearts;</span> ومدعوم بـ <span class="text-blue-700">Laravel</span>.</p>
+        <footer class="text-center text-color-secondary text-sm mt-12 pt-8 border-t border-color flex flex-col items-center space-y-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Emblem_GCC.svg" alt="GCC Emblem" class="h-16 w-auto">
+            <div>
+                <p>&copy; 2025 [اسم مركزك الإعلامي]. جميع الحقوق محفوظة.</p>
+                <p>مصمم بـ <span class="text-red-500">&hearts;</span> ومدعوم بـ <span class="text-blue-700">Laravel</span>.
+                </p>
+            </div>
         </footer>
     </div>
 
@@ -581,8 +784,12 @@
         <div class="modal-content">
             <span class="close-button" id="close-modal-btn">&times;</span>
             <h3 class="text-2xl font-bold text-color-primary mb-4 text-right">اسألني أي شيء / ملاحظات عامة</h3>
-            <textarea id="ama-textarea" class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 mb-4 text-right input-bg text-color-primary" rows="6" placeholder="سؤالك أو ملاحظاتك العامة..."></textarea>
-            <button id="submit-ama-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 w-full">إرسال الملاحظات</button>
+            <textarea id="ama-textarea"
+                class="w-full p-2 border input-border rounded-md focus:ring-indigo-500 focus:border-indigo-500 mb-4 text-right input-bg text-color-primary"
+                rows="6" placeholder="سؤالك أو ملاحظاتك العامة..."></textarea>
+            <button id="submit-ama-btn"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 w-full">إرسال
+                الملاحظات</button>
             <p id="ama-thank-you" class="text-green-600 mt-2 hidden text-center">شكراً لملاحظاتك العامة!</p>
         </div>
     </div>
@@ -615,7 +822,7 @@
 
             // Handle Yes/No/Suggest buttons
             document.querySelectorAll('.feedback-button').forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const sectionId = this.dataset.section;
                     const responseType = this.dataset.response;
                     const thankYouMessage = document.getElementById(`${sectionId}-thank-you`);
@@ -646,7 +853,7 @@
 
             // Handle Submit for suggestion forms
             document.querySelectorAll('.submit-feedback').forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const sectionId = this.dataset.section;
                     const textarea = this.previousElementSibling; // The textarea before the button
                     const suggestion = textarea ? textarea.value : '';
@@ -674,7 +881,7 @@
             // Handle dropdown feedback submission
             const mediaChannelImpactSelect = document.getElementById('media-channel-impact');
             if (mediaChannelImpactSelect) {
-                mediaChannelImpactSelect.nextElementSibling.addEventListener('click', function() { // Assuming button is next sibling
+                mediaChannelImpactSelect.nextElementSibling.addEventListener('click', function () { // Assuming button is next sibling
                     const selectedValue = mediaChannelImpactSelect.value;
                     const thankYouMessage = document.getElementById('media-mix-impact-thank-you');
 
@@ -766,7 +973,7 @@
             function setupAutocomplete(inputElement, suggestionsDiv, keywords) {
                 let currentFocus = -1;
 
-                inputElement.addEventListener("input", function(e) {
+                inputElement.addEventListener("input", function (e) {
                     let a, b, i, val = this.value;
                     closeAllLists(suggestionsDiv);
                     if (!val) { return false; }
@@ -784,10 +991,10 @@
                             const startIndex = keywords[i].indexOf(val);
                             const endIndex = startIndex + val.length;
                             b.innerHTML = keywords[i].substring(0, startIndex) +
-                                          "<strong>" + keywords[i].substring(startIndex, endIndex) + "</strong>" +
-                                          keywords[i].substring(endIndex);
+                                "<strong>" + keywords[i].substring(startIndex, endIndex) + "</strong>" +
+                                keywords[i].substring(endIndex);
                             b.innerHTML += "<input type='hidden' value='" + keywords[i] + "'>";
-                            b.addEventListener("click", function(e) {
+                            b.addEventListener("click", function (e) {
                                 inputElement.value = this.getElementsByTagName("input")[0].value;
                                 closeAllLists(suggestionsDiv);
                             });
@@ -796,7 +1003,7 @@
                     }
                 });
 
-                inputElement.addEventListener("keydown", function(e) {
+                inputElement.addEventListener("keydown", function (e) {
                     let x = document.getElementById(this.id + "autocomplete-list");
                     if (x) x = x.getElementsByTagName("div");
                     if (e.keyCode == 40) { // Arrow Down
@@ -895,4 +1102,5 @@
         });
     </script>
 </body>
+
 </html>

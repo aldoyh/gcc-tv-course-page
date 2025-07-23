@@ -1,5 +1,8 @@
-# [Your Media Center Name] - Media Plan
+# لتوليد تلقينة خاصة بمركز الإعلام الخاص بك
 
+## [Your Media Center Name] - Media Plan
+
+![alt text](<assets/images/Screenshot 2025-07-23.jpg>)
 This repository hosts the interactive media plan for **[Your Media Center Name]**, designed to outline our strategies for growth, engagement, and community building in Isa Town, Bahrain.
 
 This is not just a static document but a dynamic, interactive webpage that allows for real-time feedback and content idea generation, built with future integration into a Laravel backend in mind.
